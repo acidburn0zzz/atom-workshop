@@ -1,13 +1,12 @@
 package db
 
-import com.gu.contentatom.thrift.{Atom, AtomType}
-import com.gu.atom.data.{DynamoDataStore, DataStoreResult, IDNotFound}
-import play.api.Logger
 import cats.syntax.either._
-import models.{AtomAPIError, AtomWorkshopDynamoDatastoreError}
+import com.gu.atom.data.{DataStoreResult, DynamoDataStore, IDNotFound}
+import com.gu.contentatom.thrift.{Atom, AtomType}
 import com.gu.pandomainauth.model.User
+import models.{AtomAPIError, AtomWorkshopDynamoDatastoreError}
+import play.api.Logger
 import util.AtomLogic._
-import AtomDataStores._
 
 trait AtomWorkshopDBAPI {
 
@@ -17,7 +16,6 @@ trait AtomWorkshopDBAPI {
   }
 
   def createAtom(datastore: DynamoDataStore, atomType: AtomType, user: User, atom: Atom): Either[AtomAPIError, Atom]
-
 
   def getAtom(datastore: DynamoDataStore, atomType: AtomType, id: String): Either[AtomAPIError, Atom]
 

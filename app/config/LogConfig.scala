@@ -1,14 +1,13 @@
 package config
 
-import ch.qos.logback.classic.{Logger => LogbackLogger}
-import net.logstash.logback.layout.LogstashLayout
-import org.slf4j.{LoggerFactory, Logger => SLFLogger}
-import com.gu.logback.appender.kinesis.KinesisAppender
-import play.api.Logger
-
 import ch.qos.logback.classic.spi.ILoggingEvent
+import ch.qos.logback.classic.{Logger => LogbackLogger}
 import ch.qos.logback.core.{Appender, LayoutBase}
 import com.google.inject.AbstractModule
+import com.gu.logback.appender.kinesis.KinesisAppender
+import net.logstash.logback.layout.LogstashLayout
+import org.slf4j.{Logger => SLFLogger, LoggerFactory}
+import play.api.Logger
 
 
 class LogConfig extends AbstractModule {

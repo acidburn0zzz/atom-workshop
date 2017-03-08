@@ -1,16 +1,15 @@
 package models
 
-import play.api.Logger
 import io.circe._
-import io.circe.syntax._
-import play.api.mvc._
 import io.circe.generic.semiauto._
+import io.circe.syntax._
+import play.api.Logger
+import play.api.mvc._
 
 case class AtomWorkshopAPIResponse(message: String)
 object AtomWorkshopAPIResponse{
   implicit val atomWorkshopApiResponseEncoder: Encoder[AtomWorkshopAPIResponse] = deriveEncoder[AtomWorkshopAPIResponse]
 }
-
 
 object APIResponse extends Results {
   def apiErrorToResult(e: AtomAPIError) = {

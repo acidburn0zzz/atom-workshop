@@ -1,12 +1,11 @@
 package config
 
-import com.amazonaws.auth.{AWSCredentialsProviderChain, InstanceProfileCredentialsProvider}
 import com.amazonaws.auth.profile.ProfileCredentialsProvider
+import com.amazonaws.auth.{AWSCredentialsProviderChain, InstanceProfileCredentialsProvider}
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient
 import com.amazonaws.services.kinesis.AmazonKinesisClient
-import play.api.Configuration
+import com.gu.cm.{Configuration => ConfigurationMagic, Mode}
 import services.AwsInstanceTags
-import com.gu.cm.{Mode, Configuration => ConfigurationMagic}
 
 object Config extends AwsInstanceTags {
 

@@ -3,7 +3,7 @@ package util
 import com.gu.contentatom.thrift.atom.cta.CTAAtom
 import com.gu.contentatom.thrift.atom.explainer.{DisplayType, ExplainerAtom}
 import com.gu.contentatom.thrift.atom.recipe.{RecipeAtom, Tags => RecipeTags, Time => RecipeTime}
-import com.gu.contentatom.thrift.atom.storyquestions.{StoryQuestionsAtom, RelatedStoryLinkType}
+import com.gu.contentatom.thrift.atom.storyquestions.{RelatedStoryLinkType, StoryQuestionsAtom}
 import com.gu.contentatom.thrift.{User, _}
 import com.gu.pandomainauth.model.{User => PandaUser}
 import models.CreateAtomFields

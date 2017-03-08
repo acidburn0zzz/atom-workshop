@@ -1,20 +1,15 @@
 package util
 
-import com.gu.atom.data.DynamoCompositeKey
-import com.gu.contentatom.thrift.{Atom, AtomType}
-import com.gu.pandomainauth.model.User
-import io.circe.{DecodingFailure, ParsingFailure, parser}
 import cats.syntax.either._
 import com.amazonaws.services.dynamodbv2.model.AmazonDynamoDBException
-import play.api.Logger
+import com.gu.atom.data.DynamoCompositeKey
+import com.gu.contentatom.thrift.{Atom, AtomType}
 import com.gu.fezziwig.CirceScroogeMacros._
-import db.AtomDataStores
-import io.circe.syntax._
-import io.circe._
-import io.circe.parser.decode
+import com.gu.pandomainauth.model.User
 import io.circe.generic.auto._
-import io.circe.generic.semiauto._
+import io.circe.{DecodingFailure, ParsingFailure, parser, _}
 import models._
+import play.api.Logger
 import util.AtomElementBuilders._
 
 object AtomLogic {

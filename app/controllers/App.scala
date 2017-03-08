@@ -6,6 +6,7 @@ import com.gu.fezziwig.CirceScroogeMacros._
 import config.Config
 import db.AtomDataStores._
 import db.AtomWorkshopDBAPI
+import io.circe._
 import io.circe.syntax._
 import models._
 import play.api.Logger

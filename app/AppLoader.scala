@@ -1,6 +1,5 @@
-import play.api.{Application, ApplicationLoader, LoggerConfigurator}
 import play.api.ApplicationLoader.Context
-import play.Logger
+import play.api.{Application, ApplicationLoader, LoggerConfigurator}
 
 class AppLoader extends ApplicationLoader {
 
