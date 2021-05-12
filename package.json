@@ -58,7 +58,7 @@
     "exports-loader": "^0.6.3",
     "filesize": "^3.5.4",
     "imports-loader": "^0.7.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.21",
     "panda-session": "^0.1.6",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
